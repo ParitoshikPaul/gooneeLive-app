@@ -1,9 +1,35 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Intro</ion-title>
-  </ion-toolbar>
+    <ion-row class="ion-justify-content-around ion-align-items-center">
+        <ion-col size="2" class="ion-text-center"></ion-col>
+        <ion-col class="ion-text-center">
+            <h3>How it works?</h3>
+        </ion-col>
+        <ion-col size="2" class="ion-text-center">Skip</ion-col>
+    </ion-row>
 </ion-header>
-
 <ion-content>
-
+    <ion-slides pager="true" [options]="slideOpts">
+        <ion-slide>
+            <div class="hiw_slide">
+                <img src="assets/goonee-webinars.png">
+                <h4>Webinars</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="hiw_slide">
+                <img src="assets/goonee-classes.png">
+                <h4>1 to 1 Class</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="hiw_slide">
+                <img src="assets/goonee-cources.png">
+                <h4>Courses</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <img class="hiw-bg" src="assets/goonee-hiw-bg.png" alt="How it work bg">
 </ion-content>

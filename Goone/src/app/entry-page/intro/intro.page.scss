@@ -1,0 +1,16 @@
+ion-header {
+    h3 {
+        margin: 0;
+        font-weight: 700;
+    }
+}
+
+ion-content {
+    position: relative;
+    height: 100%;
+    .hiw-bg {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
