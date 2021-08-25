@@ -38,6 +38,10 @@ $app-theme: mat.define-light-theme((
 
 /** Ionic CSS Variables **/
 :root {
+
+  --ion-color-btn: #6C60E1;
+  --ion-color-btn-yellow: #FDCD07;
+  
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
