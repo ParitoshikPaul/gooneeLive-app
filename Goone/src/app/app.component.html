@@ -1,9 +1,38 @@
 <ion-app>
-
   <ion-router-outlet>
-    <button routerLink="/splash">EntryPage</button>
-<button routerLink="/welcome">Welcome</button>
-<button routerLink="/intro">Intro</button>
+    <ion-tabs>
 
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="welcome">
+          <ion-icon name="triangle"></ion-icon>
+          <ion-label>welcome</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="splash">
+          <ion-icon name="ellipse"></ion-icon>
+          <ion-label>splash</ion-label>
+        </ion-tab-button>
+    
+        <ion-tab-button tab="intro">
+          <ion-icon name="square"></ion-icon>
+          <ion-label>intro</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="login">
+          <ion-icon name="square"></ion-icon>
+          <ion-label>login</ion-label>
+        </ion-tab-button>
+        <ion-tab-button tab="sign-up">
+          <ion-icon name="square"></ion-icon>
+          <ion-label>Signup</ion-label>
+        </ion-tab-button>
+
+        <ion-tab-button tab="forgot">
+          <ion-icon name="square"></ion-icon>
+          <ion-label>forgot</ion-label>
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    
+    </ion-tabs>
   </ion-router-outlet>
 </ion-app>
