@@ -5,5 +5,73 @@
         text-align: center;
         width: 150px;
         fill: #fff;
+        path {
+            opacity: 0;
+        }
+        .pa1 {
+            animation: splashani1 1s linear forwards;
+        }
+        .pa2 {
+            animation: splashani2 1s linear forwards;
+        }
+        .pa3 {
+            animation: splashani3 .5s linear forwards;
+        }
+        .pa4 {
+            animation: splashani4 2s linear forwards;
+        }
+        @keyframes splashani3 {
+            0% {
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes splashani2 {
+            0% {
+                opacity: 0;
+            }
+            15% {
+                opacity: 0.5;
+            }
+            25% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes splashani1 {
+            0% {
+                opacity: 0;
+            }
+            25% {
+                opacity: 0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes splashani4 {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            75% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
 }

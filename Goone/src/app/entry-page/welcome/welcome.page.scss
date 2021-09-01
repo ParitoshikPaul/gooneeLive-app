@@ -1,6 +1,6 @@
 ion-content {
-    .text-color-black{
-        color:black
+    .text-color-black {
+        color: black
     }
     --ion-background-color: #DAEEFF;
     .vertical-center {
@@ -8,25 +8,5 @@ ion-content {
         align-items: center;
         justify-content: center;
         height: 100%;
-    }
-    .btncolor {
-        --background: var(--ion-color-btn);
-        --border-radius: 6%;
-        span {
-            font-style: normal;
-            font-size: 12px;
-            line-height: 28px;
-            text-transform: none;
-        }
-    }
-    .btncolor-yellow {
-        --background: var(--ion-color-btn-yellow);
-        --border-radius: 6%;
-        span {
-            font-style: normal;
-            font-size: 12px;
-            line-height: 28px;
-            text-transform: none;
-        }
     }
 }

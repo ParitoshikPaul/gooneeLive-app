@@ -1,16 +1,37 @@
 ion-header {
+    background: #f8f7fd;
+    &::after {
+        background: none;
+    }
     h3 {
         margin: 0;
         font-weight: 700;
     }
 }
 
+.swiper-pagination {
+    bottom: 0 !important;
+}
+
 ion-content {
     position: relative;
     height: 100%;
+    .hiw_slide {
+        .btmround {
+            background: #f8f7fd;
+            border-radius: 0 0 45% 45%;
+            padding: 15px 50px 50px;
+            margin-bottom: 20px;
+        }
+        h4,
+        p {
+            padding: 0 2rem;
+        }
+    }
     .hiw-bg {
         position: absolute;
         bottom: 0;
         width: 100%;
+        z-index: -1;
     }
 }

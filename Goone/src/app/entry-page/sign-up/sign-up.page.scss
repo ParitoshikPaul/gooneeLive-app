@@ -1,23 +1,12 @@
-ion-input{
+ion-input {
     --background: rgb(243, 243, 243);
     --placeholder-color: black;
     --padding-start: 30px;
     --placeholder-opacity: 0.8;
     text-align: left;
     border-radius: 4px;
-    }
-
-.ml-20{
-    margin-left: 20px;
 }
 
-.btncolor {
-    --background: var(--ion-color-btn);
-    --border-radius: 6%;
-    span {
-        font-style: normal;
-        font-size: 12px;
-        line-height: 28px;
-        text-transform: none;
-    }
+.ml-20 {
+    margin-left: 20px;
 }
