@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Device } from '@ionic-native/device/ngx';
 
 @Component({
   selector: 'app-entry-page',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EntryPagePage implements OnInit {
 
-  constructor() { }
+  constructor(private device: Device) { }
 
   ngOnInit() {
+    console.log('Device UUID is: ' + this.device.uuid);
   }
 
 }

@@ -4,11 +4,11 @@
         <ion-col class="ion-text-center">
             <h3>How it works?</h3>
         </ion-col>
-        <ion-col size="2" class="ion-text-center">Skip</ion-col>
+        <ion-col size="2" class="ion-text-center" (click)="SkipToWelcome()">Skip</ion-col>
     </ion-row>
 </ion-header>
 <ion-content>
-    <ion-slides pager="true" [options]="slideOpts">
+    <ion-slides pager="true" [options]="slideOpts" #mySlider >
         <ion-slide>
             <div class="hiw_slide">
                 <div class="btmround"><img src="assets/goonee-webinars.png"></div>
@@ -24,15 +24,15 @@
             </div>
         </ion-slide>
         <ion-slide>
-            <div class="hiw_slide">
+            <div class="hiw_slide" style="margin-bottom:20px">
                 <div class="btmround"><img src="assets/goonee-cources.png"></div>
                 <h4>Courses</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
             </div>
         </ion-slide>
     </ion-slides>
-    <div style="padding: 0 2rem; margin-top: 1rem;">
-        <ion-button class="btn" color="primary" expand="block">Next</ion-button>
+    <div style="padding: 0 2rem; margin-top: 3rem;">
+        <ion-button class="btn" color="primary" expand="block" (click)="swipeNext()">Next</ion-button>
     </div>
     <img class="hiw-bg" src="assets/goonee-hiw-bg.png" alt="How it work bg">
 </ion-content>

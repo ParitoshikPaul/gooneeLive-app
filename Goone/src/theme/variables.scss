@@ -96,7 +96,7 @@ $app-theme: mat.define-light-theme(( color: ( primary: $app-primary, accent: $ap
    * Dark Colors
    * -------------------------------------------
    */
-    body {
+    body.dark {
         --ion-color-primary: #6C60E1;
         --ion-color-primary-rgb: 66, 140, 255;
         --ion-color-primary-contrast: #ffffff;

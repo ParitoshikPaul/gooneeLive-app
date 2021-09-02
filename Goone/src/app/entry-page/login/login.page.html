@@ -37,7 +37,7 @@
     <ion-row style="height: 1vh"></ion-row>
     <ion-row>
         <ion-col size="1"></ion-col>
-        <ion-col size="10" class="ion-text-start ml-20">
+        <ion-col size="10" class="ion-text-start ml-20"  (click)="forgot()">
             <ion-text>
                 Forgot Password?
             </ion-text>
@@ -94,7 +94,7 @@
     <ion-grid>
         <ion-row center>
             <ion-col size="1"></ion-col>
-            <ion-col size="10" style="font-size: 10px;" class="ion-text-center"><span>Don’t have an account?</span> <span style="margin-left: 3%;"> Create new account</span> </ion-col>
+            <ion-col size="10" style="font-size: 10px;" class="ion-text-center" (click)="register()"><span>Don’t have an account?</span> <span style="margin-left: 3%;"> Create new account</span> </ion-col>
             <ion-col size="1"></ion-col>
         </ion-row>
     </ion-grid>

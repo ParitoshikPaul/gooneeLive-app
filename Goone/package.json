@@ -18,6 +18,7 @@
     "@angular/common": "~12.1.1",
     "@angular/compiler": "~12.1.1",
     "@angular/core": "~12.1.1",
+    "@angular/fire": "^7.0.3",
     "@angular/forms": "~12.1.1",
     "@angular/material": "^12.2.2",
     "@angular/platform-browser": "~12.1.1",
@@ -28,7 +29,10 @@
     "@capacitor/haptics": "1.0.2",
     "@capacitor/keyboard": "1.0.2",
     "@capacitor/status-bar": "1.0.2",
+    "@ionic-native/device": "^5.36.0",
+    "@ionic-native/facebook": "^5.36.0",
     "@ionic/angular": "^5.5.2",
+    "firebase": "^9.0.1",
     "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -53,7 +57,8 @@
     "@typescript-eslint/eslint-plugin": "4.16.1",
     "@typescript-eslint/parser": "4.16.1",
     "cordova-android": "^9.1.0",
-    "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-device": "^2.0.3",
+    "cordova-plugin-facebook4": "^6.4.0",
     "cordova-plugin-ionic-keyboard": "^2.2.0",
     "cordova-plugin-ionic-webview": "^4.2.1",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -85,7 +90,13 @@
       "cordova-plugin-ionic-webview": {
         "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
       },
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-facebook4": {
+        "APP_ID": "1164796350709149",
+        "APP_NAME": "Goone App",
+        "FACEBOOK_HYBRID_APP_EVENTS": "false",
+        "FACEBOOK_ANDROID_SDK_VERSION": "5.13.0"
+      }
     },
     "platforms": [
       "android"
