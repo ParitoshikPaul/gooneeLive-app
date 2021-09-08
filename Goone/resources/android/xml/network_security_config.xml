@@ -2,5 +2,8 @@
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
         <domain includeSubdomains="true">localhost</domain>
+        <domain includeSubdomains="true">https://dev.goonelive.com</domain>
+        <domain includeSubdomains="true">dev.goonelive.com</domain>
+        <domain includeSubdomains="true">http://dev.goonelive.com</domain>
     </domain-config>
 </network-security-config>

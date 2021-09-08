@@ -12,6 +12,20 @@ export const environment = {
       storageBucket: "",
       messagingSenderId: "********",
       appId: "*******"
+  },
+  API:{
+    BaseURL:"https://dev.goonelive.com",
+    MiddleWare:"/api/v1/",
+    END_Points:{
+      "login":"login",
+      "register":"register",
+      "emailValidation":"user_email",
+      "PhoneValidation":"unique_phone_number",
+      "OTPValidation":"verify_otp",
+      "ResetPassword":"",
+      "SendOTP":"send_otp",
+      "PasswordPhone":"update_password_with_phone",
+    }
   }
 };
 

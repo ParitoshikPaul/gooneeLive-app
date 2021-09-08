@@ -5,7 +5,8 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { Device } from '@ionic-native/device/ngx';
+import { HttpClientModule  } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http/ngx';
 
 // import { AngularFireAuthModule } from '@angular/fire/auth';
 // import { AngularFireModule } from '@angular/fire';
@@ -15,8 +16,8 @@ import { Facebook } from '@ionic-native/facebook/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
-  providers: [Facebook, Device, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, HttpClientModule],
+  providers: [HTTP, Facebook, { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
