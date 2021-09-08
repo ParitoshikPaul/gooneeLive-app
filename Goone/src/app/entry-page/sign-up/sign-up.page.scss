@@ -1,12 +1,99 @@
-ion-input {
-    --background: rgb(243, 243, 243);
-    --placeholder-color: black;
-    --padding-start: 30px;
-    --placeholder-opacity: 0.8;
-    text-align: left;
-    border-radius: 4px;
-}
-
-.ml-20 {
-    margin-left: 20px;
-}
+    @import '../../../global.scss';
+    ion-input {
+        --background: rgb(243, 243, 243);
+        --placeholder-color: black;
+        --padding-start: 30px;
+        --placeholder-opacity: 0.8;
+        text-align: left;
+        border-radius: 4px;
+    }
+    .login{
+        background: $dark-color;
+        height: 100vh;
+        &_logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10vh;
+            h6{
+                font-size: 2.2rem;
+                padding-left: 1rem;
+                color: $light-color;
+            }
+        }
+        &_form{
+            width: 90%;
+            margin: 2rem auto 0;
+            ion-col{
+                ion-item{
+                    border-radius: 0.8rem;
+                    &:not(:last-child){
+                        margin-bottom: 2rem;
+                    }
+                    ion-input{
+                        font-size: 1.4rem;
+                        background: transparent;
+                        &::placeholder{
+                            color: $gray-text;
+                        }
+                    }
+                    ion-icon{
+                        font-size: 1.8rem;
+                        color: $gray-text;
+                    }
+                }
+                p{
+                    font-size: 1.2rem;
+                    color: $light-color;
+                    padding: 1rem 2rem;
+                }
+            }
+        }
+        
+        ion-grid{
+            &.LoginWith{
+                width: 85%;
+                margin: 0 auto 1rem;
+                .login_or_with{               
+                    text-align: center;
+                    position: relative;
+                    background: $dark-color;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0;
+                        background: $light-color;
+                        height: 1px;
+                        width: 100%;
+                    }
+                    p{
+                        font-size: 1.4rem;
+                        color: $light-color;
+                        padding: 1rem 2rem;
+                        text-transform: capitalize;
+                        background: $dark-color;
+                        display: inline-block;   
+                        position: relative;
+                        z-index: 100;
+                    }
+                }
+            }
+            ion-col{
+                p.dnthave{
+                    font-family: $font-sf;
+                    font-size: 1.4rem;
+                    color: $light-color;
+                    font-weight: normal;
+                    span{
+                        font-size: 1.4rem;
+                        font-weight: 500;                    
+                    }
+                }
+            }
+        }
+    }
+    .ml-20 {
+        margin-left: 20px;
+    }

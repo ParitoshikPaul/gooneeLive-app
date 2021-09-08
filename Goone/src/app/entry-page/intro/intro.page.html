@@ -1,17 +1,23 @@
 <ion-header>
     <ion-row class="ion-justify-content-around ion-align-items-center">
-        <ion-col size="2" class="ion-text-center"></ion-col>
+        <ion-col size="2" class="ion-text-center"><svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.8586 6.68879L3.47967 6.68879L7.34394 10.3491C7.41298 10.413 7.46793 10.4893 7.50562 10.5735C7.54331 10.6577 7.563 10.7482 7.56353 10.8396C7.56406 10.9311 7.54543 11.0217 7.50872 11.1063C7.47201 11.1909 7.41794 11.2678 7.34966 11.3325C7.28137 11.3971 7.20022 11.4483 7.11091 11.4831C7.02159 11.5178 6.92588 11.5355 6.82932 11.535C6.73276 11.5344 6.63727 11.5158 6.54837 11.4801C6.45947 11.4443 6.37894 11.3923 6.31144 11.3269L1.20094 6.48617C1.06407 6.35649 0.987182 6.18063 0.987182 5.99726C0.987182 5.81389 1.06407 5.63803 1.20094 5.50835L6.31144 0.667646C6.37916 0.603307 6.45964 0.552283 6.54826 0.517511C6.63687 0.482738 6.73187 0.464902 6.82778 0.465028C6.97215 0.465057 7.11328 0.50563 7.23331 0.581618C7.35334 0.657606 7.44689 0.765598 7.50213 0.89194C7.55738 1.01828 7.57184 1.1573 7.54368 1.29143C7.51552 1.42555 7.44601 1.54876 7.34394 1.64547L3.47967 5.30573L14.8586 5.30573C15.0522 5.30573 15.2379 5.37859 15.3748 5.50828C15.5117 5.63796 15.5886 5.81386 15.5886 5.99726C15.5886 6.18067 15.5117 6.35656 15.3748 6.48625C15.2379 6.61593 15.0522 6.68879 14.8586 6.68879Z" fill="black"/>
+            </svg>
+        </ion-col>
         <ion-col class="ion-text-center">
             <h3>How it works?</h3>
         </ion-col>
-        <ion-col size="2" class="ion-text-center" (click)="SkipToWelcome()">Skip</ion-col>
+        <ion-col size="2" class="ion-text-center" (click)="SkipToWelcome()">
+            <p (click)="SkipToWelcome()">Skip</p>
+        </ion-col>
     </ion-row>
 </ion-header>
 <ion-content>
-    <ion-slides pager="true" [options]="slideOpts" #mySlider >
+    <img src="../../../assets/intro_bg.png" class="img-fluid intro" alt="">
+    <ion-slides pager="true" [options]="slideOpts" #mySlider>
         <ion-slide>
             <div class="hiw_slide">
-                <div class="btmround"><img src="assets/goonee-webinars.png"></div>
+                <div class="btmround"><img src="assets/goonee-webinars.png" class="img-fluid"></div>
                 <h4>Webinars</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit.</p>
             </div>

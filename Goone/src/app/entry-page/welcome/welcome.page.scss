@@ -1,6 +1,27 @@
+@import '../../../global.scss';
 ion-content {
     .text-color-black {
         color: black
+    }
+    ion-col{
+        .sub-text{
+            margin: 0 auto;
+            padding-top: 2rem;
+            width: 90%;
+            font-size: 1.4rem;
+        }
+        img.fix-b{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 99%;
+            height: auto;
+        }
+    }
+    ion-icon{
+        svg{
+            height: 4rem;
+        }
     }
     --ion-background-color: #DAEEFF;
     .vertical-center {

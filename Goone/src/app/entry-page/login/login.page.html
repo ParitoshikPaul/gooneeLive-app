@@ -14,7 +14,6 @@
                     fill="white" />
             </svg>
         </ion-col>
-        <ion-col class="ion-align-self-end"></ion-col>
     </ion-row>
     <ion-row style="height: 5vh"></ion-row>
     <form [formGroup]="loginForm">
@@ -64,7 +63,6 @@
                     Login
                 </ion-button>
             </ion-col>
-            <ion-col size="1"></ion-col>
         </ion-row>
     </form>
     <ion-row>
@@ -112,6 +110,11 @@
                     account?</span> <span style="margin-left: 3%;"> Create new account</span> </ion-col>
             <ion-col size="1"></ion-col>
         </ion-row>
+        <ion-row>
+            <ion-col class="ion-text-center">
+                <p class="dnthave">Don’t have an account? <span (click)="register()">Create new account</span> </p>
+            </ion-col>
+        </ion-row>
     </ion-grid>
-
+   
 </ion-content>

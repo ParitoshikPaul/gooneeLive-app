@@ -1,4 +1,4 @@
-@import '../../../global.scss';
+@import '../../../../global.scss';
 ion-input {
     --background: rgb(243, 243, 243);
     --placeholder-color: black;
@@ -21,16 +21,6 @@ ion-input {
             color: $light-color;
         }
     }
-    p.subtext{
-        font-size: 1.4rem;
-        width: 80%;
-        margin: 3rem auto 0;
-        font-weight: normal;
-        text-transform: capitalize;
-        &.textBlue{
-            color: $dark-blue;
-        }
-    }
     &_form{
         width: 90%;
         margin: 2rem auto 0;
@@ -40,7 +30,8 @@ ion-input {
                 &:not(:last-child){
                     margin-bottom: 2rem;
                 }
-                ion-input{
+                ion-input,
+                ion-select{
                     font-size: 1.4rem;
                     background: transparent;
                     &::placeholder{
@@ -103,7 +94,4 @@ ion-input {
             }
         }
     }
-}
-.ml-20 {
-    margin-left: 20px;
 }

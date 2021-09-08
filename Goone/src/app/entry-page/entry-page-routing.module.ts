@@ -35,7 +35,16 @@ const routes: Routes = [
   {
     path: 'reset-password',
     loadChildren: () => import('./reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+  },
+  {
+    path: 'passcode-verification',
+    loadChildren: () => import('./passcode-verification/passcode-verification.module').then( m => m.PasscodeVerificationPageModule)
+  },  {
+    path: 'password-changed',
+    loadChildren: () => import('./password-changed/password-changed.module').then( m => m.PasswordChangedPageModule)
   }
+
+
 ];
 
 @NgModule({

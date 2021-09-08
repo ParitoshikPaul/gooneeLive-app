@@ -16,5 +16,12 @@ export class SignUpPage implements OnInit {
   login(){
     this.router.navigateByUrl('/login');
   }
+  next(){
+    this.router.navigateByUrl('number');
+  }
+
+  register(){
+    
+  }
 
 }

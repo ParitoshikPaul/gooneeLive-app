@@ -7,7 +7,16 @@ const routes: Routes = [
   {
     path: '',
     component: SignUpPage
+  },
+  {
+    path: 'number',
+    loadChildren: () => import('./number/number.module').then( m => m.NumberPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./password/password.module').then( m => m.PasswordPageModule)
   }
+
 ];
 
 @NgModule({

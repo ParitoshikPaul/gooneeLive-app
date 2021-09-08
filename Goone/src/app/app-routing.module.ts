@@ -35,6 +35,22 @@ const routes: Routes = [
   {
     path: 'reset-password',
     loadChildren: () => import('./entry-page/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
+  },
+  {
+    path: 'passcode-verification',
+    loadChildren: () => import('./entry-page/passcode-verification/passcode-verification.module').then( m => m.PasscodeVerificationPageModule)
+  },
+  {
+    path: 'number',
+    loadChildren: () => import('./entry-page/sign-up/number/number.module').then( m => m.NumberPageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./entry-page/sign-up/password/password.module').then( m => m.PasswordPageModule)
+  } ,
+  {
+    path: 'password-changed',
+    loadChildren: () => import('./entry-page/password-changed/password-changed.module').then( m => m.PasswordChangedPageModule)
   } 
 ];
 @NgModule({

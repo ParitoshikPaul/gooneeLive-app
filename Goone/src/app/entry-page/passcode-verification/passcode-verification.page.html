@@ -7,34 +7,44 @@
               <path d="M5.39831 18.5164C5.39474 21.2194 5.92497 23.8964 6.9586 26.394C7.99223 28.8915 9.50888 31.1604 11.4215 33.0703L8.21432 36.2775C3.50617 31.5625 0.862734 25.1711 0.864992 18.5079C0.867249 11.8447 3.51501 5.455 8.22636 0.743164L11.4345 3.95135C9.51802 5.86139 7.99807 8.13152 6.96214 10.6312C5.92621 13.1308 5.39475 15.8106 5.39831 18.5164Z" fill="white"/>
               <path d="M12.7329 18.5164C12.7307 20.2556 13.0729 21.9779 13.7397 23.5841C14.4066 25.1903 15.385 26.6485 16.6184 27.8746L13.4172 31.0758C11.7629 29.4277 10.4505 27.469 9.55539 25.3122C8.66027 23.1554 8.20006 20.8431 8.20117 18.5079C8.20229 16.1728 8.66472 13.8609 9.56191 11.7049C10.4591 9.54903 11.7734 7.59159 13.4292 5.94507L16.6304 9.14628C15.3934 10.3728 14.412 11.8325 13.743 13.4409C13.074 15.0493 12.7307 16.7745 12.7329 18.5164Z" fill="white"/>
             </svg>
-            <h6>Reset password</h6>
-          </div>                       
-          <p class="subtext textBlue">
-            Enter a new password below.
-          </p>
+            <h6>Passcode Verification</h6>
+          </div>     
+          <p class="subtext">
+            A password reset passcode has been sent to your
+            mobile number 955558****
+          </p>                  
        </ion-col>
    </ion-row>
    <ion-grid>
        <form action="" class="login_form">
            <ion-row>
-               <ion-col>
+               <ion-col class="passcode-input">
                    <ion-item>
-                       <ion-input placeholder="New Password"></ion-input>
-                       <ion-icon name="eye-outline"></ion-icon>
+                       <ion-input></ion-input>
                    </ion-item>
                    <ion-item>
-                       <ion-input placeholder="Confirm New Password"></ion-input>
-                       <ion-icon name="eye-outline"></ion-icon>
+                       <ion-input></ion-input>
+                   </ion-item>
+                   <ion-item>
+                       <ion-input></ion-input>
+                   </ion-item>
+                   <ion-item>
+                       <ion-input></ion-input>
                    </ion-item>
                </ion-col>
            </ion-row>
            <ion-row>
                <ion-col>
-                   <ion-button class="btn" color="primary" expand="block">
-                       Save
+                   <ion-button class="btn" color="primary" expand="block" (click)="signupsubmit()">
+                    Submit
                    </ion-button>
                </ion-col>
-           </ion-row>
+           </ion-row>           
+          <ion-row>
+              <ion-col class="ion-text-center">
+                  <p class="dnthave">Didn’t get Passcode? <span>Resend Passcode</span> </p>
+              </ion-col>
+          </ion-row>
        </form>
    </ion-grid>
   </div>

@@ -9,12 +9,6 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
-:host,
-body {
-    font: 400 14px / 20px 'Sofia Pro' !important;
-    font-family: 'Sofia Pro' !important;
-}
-
 
 /* Core CSS required for Ionic components to work properly */
 
@@ -34,9 +28,35 @@ body {
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+:host,
+body {
+    font: 400 14px / 20px 'Sofia Pro' !important;
+    font-family: 'Sofia Pro' !important;
+}
+
+$font-sf:'Sofia Pro' !important;
+$light-gray-bg:#f8f7fd;
+$light-color:#fff;
+$dark-color: #000;
+$gray-text: #4D4D4D;
+$dark-blue:#6C60E1;
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-    font-weight: 300;
-    font-size: 0.9rem;
+    margin: 0;
+    font-family: $font-sf;
+}
+
+.img-fluid {
+    max-width: 100%;
 }
 
 .btn-primary,
@@ -46,9 +66,46 @@ p {
     }
 }
 
+ion-button {
+    font-size: 1.4rem;
+}
+
 .btn {
     --border-radius: 0rem 0.6rem 0.6rem 0.6rem;
     height: 45px;
     --box-shadow: 0px !important;
     font-family: 'Sofia Pro' !important;
+}
+
+.item-native,
+.button-native {
+    font-family: 'Sofia Pro' !important;
+}
+
+.f-8 {
+    font-size: 0.8rem;
+}
+
+.f-10 {
+    font-size: 1rem;
+}
+
+.f-12 {
+    font-size: 1.2rem;
+}
+
+.f-14 {
+    font-size: 1.4rem;
+}
+
+.f-16 {
+    font-size: 1.6rem;
+}
+
+.f-18 {
+    font-size: 1.8rem;
+}
+
+.f-20 {
+    font-size: 2rem;
 }

@@ -23,23 +23,23 @@ ion-input {
     }
     p.subtext{
         font-size: 1.4rem;
+        color: $light-color;
         width: 80%;
         margin: 3rem auto 0;
         font-weight: normal;
-        text-transform: capitalize;
-        &.textBlue{
-            color: $dark-blue;
-        }
     }
     &_form{
         width: 90%;
         margin: 2rem auto 0;
         ion-col{
+            &.passcode-input{
+                display: flex;
+                ion-item{
+                    margin: 0 0.5rem;
+                }
+            }
             ion-item{
                 border-radius: 0.8rem;
-                &:not(:last-child){
-                    margin-bottom: 2rem;
-                }
                 ion-input{
                     font-size: 1.4rem;
                     background: transparent;
@@ -51,6 +51,9 @@ ion-input {
                     font-size: 1.8rem;
                     color: $gray-text;
                 }
+            }
+            ion-button{
+                margin-top: 2rem;
             }
             p{
                 font-size: 1.2rem;
