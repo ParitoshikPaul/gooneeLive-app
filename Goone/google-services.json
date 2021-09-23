@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "544518079684",
+    "project_id": "goone-app-eb264",
+    "storage_bucket": "goone-app-eb264.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544518079684:android:0d4ed6605238e8adf73591",
+        "android_client_info": {
+          "package_name": "com.android.goone.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544518079684-qsh80ro3dt2hicm3n2ragq3rtq2cipla.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDI4Tj-JbTsCwfE9paLakwOnIpsN-UIAAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544518079684-qsh80ro3dt2hicm3n2ragq3rtq2cipla.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
