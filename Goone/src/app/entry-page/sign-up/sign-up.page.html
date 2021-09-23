@@ -12,20 +12,26 @@
             </ion-col>
         </ion-row>
      <ion-grid>
-         <form action="" class="login_form">
+       <form [formGroup]="loginForm" class="login_form">
              <ion-row>
                  <ion-col>
                      <ion-item>
-                         <ion-input placeholder="First Name"></ion-input>
+                        <ion-input placeholder="First Name" formControlName="first_name" type="text" required></ion-input>
+                        <div *ngIf="submitted && f.first_name.errors" class="invalid-feedback-outdoor">
+                            <div *ngIf="f.first_name.errors.required">First Name is required</div>
+                        </div>
                      </ion-item>
                      <ion-item>
-                         <ion-input placeholder="Last Name"></ion-input>
+                        <ion-input placeholder="Last Name" formControlName="last_name" type="text" required></ion-input>
+                        <div *ngIf="submitted && f.last_name.errors" class="invalid-feedback-outdoor">
+                            <div *ngIf="f.last_name.errors.required">Last Name is required</div>
+                        </div>
                      </ion-item>
                  </ion-col>
              </ion-row>
              <ion-row>
                  <ion-col>
-                     <ion-button class="btn" color="primary" expand="block" (click)="next()">
+                     <ion-button class="btn" color="primary" expand="block"  (click)="register()">
                          Next
                      </ion-button>
                  </ion-col>

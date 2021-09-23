@@ -1,10 +1,9 @@
 import { environment } from './../../../environments/environment';
 import { CrudService } from './../../services/crud.service';
-import { BaseService } from './../../services/base.service';
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook/ngx';
 import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
+import { LocalService } from 'src/app/services/local.service';
 
 
 @Component({
@@ -17,16 +16,18 @@ export class LoginPage implements OnInit {
   public loginForm: FormGroup;
   submitted = false;
 
-  constructor(private router: Router, private fb: Facebook, public formBuilder: FormBuilder, private crudService:CrudService) { }
+  constructor(
+    public router: Router, 
+    public formBuilder: FormBuilder, 
+    public crudService:CrudService,
+    public localService:LocalService 
+    ) { }
   ngOnInit() {
-    //   this.fb.login(['public_profile', 'user_friends', 'email'])
-    // .then((res: FacebookLoginResponse) => console.log('Logged into Facebook!', res))
-    // .catch(e => console.log('Error logging into Facebook', e));
     this.loginForm = this.formBuilder.group({
       username: new FormControl('admin@yopmail.com', Validators.compose([Validators.required, Validators.email])),
       usernamePassword: new FormControl('123456', Validators.compose([Validators.required]))
     });
-  }
+  } 
 
   get f() { return this.loginForm.controls; }
 
@@ -39,8 +40,10 @@ export class LoginPage implements OnInit {
       return;
     }
     
-    this.crudService.post(environment.API.END_Points.login,{"username":"test@gmail.com","password":"Admin@123","social":false}).subscribe((res)=>{
-      console.log(res)
+    this.crudService.post(environment.API.END_Points.login,{"username":"test@gmail.com","password":"Admin@123","social":false}).subscribe((res:any)=>{
+      if(res.access_token){
+        this.localService.set('session-token',res);
+      }
     });     
     this.router.navigateByUrl('/login');
   }
@@ -54,3 +57,4 @@ export class LoginPage implements OnInit {
   }
 
 }
+     

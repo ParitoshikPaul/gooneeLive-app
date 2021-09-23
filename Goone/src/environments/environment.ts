@@ -5,22 +5,22 @@
 export const environment = {
   production: false,
   firebaseConfig:{
-      apiKey: "AIzaSyBE4wfsQFf9pl_0TAvGCPpLcXAYgBrSJZg",
-      authDomain: "goone-app.firebaseapp.com",
-      databaseURL: "YOUR-URL",
-      projectId: "177361201578",
-      storageBucket: "",
-      messagingSenderId: "********",
-      appId: "*******"
+    apiKey: "AIzaSyADoi_i0XceEGYPTAfLYtTzaiFuA0-5_6s",
+    authDomain: "goone-app-eb264.firebaseapp.com",
+    projectId: "goone-app-eb264",
+    storageBucket: "goone-app-eb264.appspot.com",
+    messagingSenderId: "544518079684",
+    appId: "1:544518079684:web:12a5462fc252b18af73591",
+    measurementId: "G-V9T99X7P7V"
   },
   API:{
     BaseURL:"https://dev.goonelive.com",
     MiddleWare:"/api/v1/",
     END_Points:{
-      "login":"login",
-      "register":"register",
+      "login":"user/login",
+      "register":"user/register",
       "emailValidation":"user_email",
-      "PhoneValidation":"unique_phone_number",
+      "PhoneValidation":"unique_phone_number",      
       "OTPValidation":"verify_otp",
       "ResetPassword":"",
       "SendOTP":"send_otp",
